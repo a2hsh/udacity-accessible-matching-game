@@ -147,7 +147,7 @@ $(document).ready(function() {
   // Making sure click events are fired only on cards.
   function cardClick(e) {
     var card = e.target;
-    if (!event.target.matches('.card')) {
+    if (e.target.matches('.card')) {
       // The event will only run on elements with class .card.
       if (GameStart === false) {
         // set the timer on the first click
