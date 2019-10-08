@@ -11,8 +11,7 @@ By Abdulaziz Alshmasi.
 4. [Future improvements](#todo)
 5. [Issues](#issues)
 
-<a name="introduction" />
-## Introduction
+## Introduction<a name="introduction" />
 The Matching Game is a fun game, focusing on matching cards together. Pick a card, find its match, try to match all 16 cards in the least time with the least mistakes possible.
 Built using jQuery, Vanilla JS, HTML5, CSS3 and [Materialize](https://materializecss.com/), this game will put your memory to the test. So, are you up for it?
 
