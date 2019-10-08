@@ -1,0 +1,81 @@
+<!doctype html>
+<!doctype html lang="en">
+
+<head>
+  <title>Matching Game</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Matching Game">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coda">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/stopwatch.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body>
+
+  <div class="middle-box">
+    <header>
+      <h4 class="text-center">The Matching Game</h4>
+    </header>
+
+    <section role="main" aria-label="Score Board" class="score-panel">
+      <ul id="stars-list" class="stars">
+        <li><i class="fa fa-star" aria-label="*"></i></li>
+        <li><i class="fa fa-star" aria-label="*"></i></li>
+        <li><i class="fa fa-star" aria-label="*"></i></li>
+      </ul>
+      <span id="grade" class="moves" aria-live="assertive"></span>
+
+      <span style="margin: 0px 20px;" aria-live="assertive" aria-atomic="true">
+        <strong><span id="moves-text"></span></strong> Moves
+      </span>
+
+      <span style="margin: 0px 20px;" role="timer" aria-atomic="true">
+        <strong><span id="time-text"></span></strong>
+      </span>
+
+      <span style="margin: 0px 20px;">
+        <strong><span id="msg-text"></span></strong>
+      </span>
+
+      <div id="info-btn" class="hint">
+        <span role="link" tabindex="0"><i class="fa fa-info"></i> Info</span>
+      </div>
+      <div id="reset-btn" class="restart">
+        <span role="link" tabindex="0"><i class="fa fa-repeat"></i> Restart</span>
+      </div>
+    </section>
+
+    <div role="main" aria-label="Game">
+        <!-- A heading for screen readers only, displaying the game area -->
+        <h2 class="sr-only">Game Area</h2>
+        <ul id="deck" class="deck"></ul>
+    </div>
+  </div>
+
+<!-- The following modal will appear after the game. -->
+
+  <div id="modal" class="modal">
+    <div role="complementary" class="modal-content">
+      <h5>Game Results</h5>
+<p><span id="msgResults"></span></p>
+      <p><strong>Time:</strong> <span id="timeResults"></span></p>
+      <p><strong>Moves:</strong> <span id="movesResults"></span></p>
+      <p><strong>Grade:</strong> <span id="gradeResults"></span></p>
+    </div>
+    <div class="modal-footer" role="footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="modalResetBtn">Replay</a>
+    </div>
+  </div>
+</body>
+</html>
