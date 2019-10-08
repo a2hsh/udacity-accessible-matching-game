@@ -148,7 +148,7 @@ $(document).ready(function() {
   function cardClick(e) {
     var card = e.target;
     if (card.matches('[data-card]')) {
-      // The event will only run on elements with class .card.
+      // The event will only run on elements with a data-card attribute.
       if (GameStart === false) {
         // set the timer on the first click
         GameStart = true;
